@@ -1,5 +1,5 @@
 import { normalColors as colors, normalColors } from './colors';
-import { hp } from './shared/resposive-dimension';
+import { hp } from './shared/responsive-dimension';
 
 const font = {
   fontFamily: 'Gelion-Regular',
@@ -12,7 +12,7 @@ export const light = {
 
 export const regular = {
   fontFamily: 'Gelion-Regular',
-  color: colors.grey700,
+  color: colors.dark,
 };
 
 export const medium = {

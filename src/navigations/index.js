@@ -1,12 +1,12 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import { createSharedElementStackNavigator } from 'react-navigation-shared-element';
+import { createStackNavigator } from '@react-navigation/stack';
 import { HomeRoutes } from './home-navigation';
 import Onboarding from './home-navigation';
 import { connect } from 'react-redux';
 import { getData, storeData } from '../utils/async-cache';
 
-const Stack = createSharedElementStackNavigator();
+const Stack = createStackNavigator();
 
 const AppNav = () => {
   return (

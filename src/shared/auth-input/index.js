@@ -1,9 +1,9 @@
 import React, { useState, useRef } from 'react';
 import { TextInput, TextInputProps, Text, Image, View } from 'react-native';
 import { images } from '../../images';
-import TouchItem from '../touch-Item';
+import TouchItem from '../touch-item';
 import { styles } from './style';
-import { wp } from '../resposive-dimension';
+import { wp } from '../responsive-dimension';
 import IoniconsIcon from 'react-native-vector-icons/Ionicons';
 
 const { icons } = images;

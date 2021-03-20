@@ -3,7 +3,7 @@
  */
 const sharedColors = {
   white: '#FFFFFF',
-  dark: '#0E1728',
+  dark: '#012224',
   primary: '#3200C8',
   blue: '#0138FA',
   secondary: '#9D9DAC',
@@ -16,6 +16,8 @@ const sharedColors = {
   grey900: '#0E1728',
   grey200: '#E3EBED',
   gray: '#DBDAE6',
+  tael: '#E6F5F6',
+  taelDark: '#0898A0',
   lightGray: '#F7F9FA',
   darkGray: '#E0DCEA',
   skyBlue: '#716EF6',
