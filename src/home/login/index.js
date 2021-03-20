@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text } from 'react-native';
-import { AuthInput, LongButton } from '../../shared';
+import { LabelledInput, LongButton } from '../../shared';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import { normalColors as colors } from '../../colors';
 import { styles } from './style';
@@ -27,7 +27,7 @@ const Login = () => {
         </Text>
       </View>
       <View style={styles.formContainer}>
-        <AuthInput
+        <LabelledInput
           label="Email Address"
           containerStyle={{ marginBottom: hp(12) }}
           scrollEnabled={true}
@@ -38,7 +38,7 @@ const Login = () => {
           autoCompleteType="email"
           numberOfLines={1}
         />
-        <AuthInput
+        <LabelledInput
           label="Email Address"
           containerStyle={{ marginBottom: hp(12) }}
           scrollEnabled={true}
