@@ -1,12 +1,17 @@
-import React from 'react';
-import { View, Text } from 'react-native';
+import React, { useEffect } from 'react';
+import { Provider } from 'react-redux';
+import { getPersistor } from '@rematch/persist';
+import { PersistGate } from 'redux-persist/lib/integration/react';
+import store from './redux/store';
+import AppNavigation from './navigations';
+import Login from './home/login';
+
+if (!__DEV__) {
+  console.log = () => null;
+}
 
 const App = () => {
-  return (
-    <View>
-      <Text>App </Text>
-    </View>
-  );
+  return <AppNavigation />;
 };
 
 export default App;

@@ -5,10 +5,9 @@ import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view
 
 const Login = () => {
   return (
-    <KeyboardAwareScrollView>
-      <AuthInput />
-      <LongButton />
-    </KeyboardAwareScrollView>
+    <View>
+      <Text>Login</Text>
+    </View>
   );
 };
 

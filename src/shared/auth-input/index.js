@@ -5,6 +5,7 @@ import TouchItem from '../touch-Item';
 import { styles } from './style';
 import { wp } from '../resposive-dimension';
 import IoniconsIcon from 'react-native-vector-icons/Ionicons';
+
 const { icons } = images;
 
 const AuthInput: React.FC<TextInputProps> = React.forwardRef(
