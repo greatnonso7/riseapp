@@ -8,13 +8,14 @@ import 'react-native-gesture-handler';
 import Login from './home/login';
 import Dashboard from './dashboard/home';
 import Plan from './dashboard/plans';
+import AllPlans from './dashboard/plans/all-plans';
 
 if (!__DEV__) {
   console.log = () => null;
 }
 
 const App = () => {
-  return <Plan />;
+  return <AllPlans />;
 };
 
 export default App;
