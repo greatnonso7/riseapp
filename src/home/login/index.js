@@ -12,12 +12,6 @@ const Login = () => {
   const navigation = useNavigation();
   const [currentInput, setCurrentInput] = React.useState('');
 
-  var extraHeight = isIOS
-    ? currentInput === 'first'
-      ? hp(140)
-      : hp(70)
-    : -hp(118);
-
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.titleContainer}>

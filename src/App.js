@@ -11,13 +11,14 @@ import Plan from './dashboard/plans';
 import AllPlans from './dashboard/plans/all-plans';
 import RealEstate from './dashboard/real-estate';
 import PlanName from './dashboard/plans/plan-name';
+import PlanDuration from './dashboard/plans/plan-duration';
 
 if (!__DEV__) {
   console.log = () => null;
 }
 
 const App = () => {
-  return <PlanName />;
+  return <PlanDuration />;
 };
 
 export default App;
