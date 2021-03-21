@@ -156,7 +156,13 @@ export const styles = StyleSheet.create({
     marginHorizontal: hp(20),
   },
   transactText: {
-    ...main.regularText20,
+    ...main.regularText18,
+  },
+  transactDate: {
+    ...main.regularText14,
+  },
+  status: {
+    ...main.regularText14,
   },
   transactionList: {
     borderBottomWidth: 0.3,

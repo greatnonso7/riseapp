@@ -65,11 +65,21 @@ const Dashboard = () => {
               <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                 <Image
                   source={item.image}
+                  resizeMode="contain"
                   style={{ width: wp(38), height: hp(38) }}
                 />
                 <View style={{ paddingLeft: hp(10) }}>
-                  <Text>{item.type}</Text>
-                  <Text>{item.date}</Text>
+                  <Text style={styles.transactText}>{item.type}</Text>
+                  <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                    <Text style={styles.transactDate}>{item.date}</Text>
+                    <Text> </Text>
+                    {item.status ? (
+                      <Text
+                        style={[styles.status, { color: item.statusColor }]}>
+                        • {item.status}
+                      </Text>
+                    ) : null}
+                  </View>
                 </View>
               </View>
               <View>
