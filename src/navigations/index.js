@@ -1,22 +1,24 @@
 import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import { HomeRoutes } from './home-navigation';
-import Onboarding from './home-navigation';
-import { connect } from 'react-redux';
-import { getData, storeData } from '../utils/async-cache';
+import AuthNav from './onboarding';
+import DashboardBottomTab from './dashboard/dashboard-bottom-tab';
 
 const Stack = createStackNavigator();
 
 const AppNav = () => {
   return (
-    <NavigationContainer>
+    <Stack.Navigator>
       <Stack.Screen
-        name="Onboarding"
+        name="AuthName"
         options={{ headerShown: false }}
-        component={Onboarding}
+        component={AuthNav}
       />
-    </NavigationContainer>
+      <Stack.Screen
+        name="Dashboard"
+        options={{ headerShown: false }}
+        component={DashboardBottomTab}
+      />
+    </Stack.Navigator>
   );
 };
 

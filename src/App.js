@@ -5,23 +5,19 @@ import { PersistGate } from 'redux-persist/lib/integration/react';
 import store from './redux/store';
 import AppNavigation from './navigations';
 import 'react-native-gesture-handler';
-import Login from './home/login';
-import Dashboard from './dashboard/home';
-import Plan from './dashboard/plans';
-import AllPlans from './dashboard/plans/all-plans';
-import RealEstate from './dashboard/real-estate';
-import PlanName from './dashboard/plans/plan-name';
-import PlanDuration from './dashboard/plans/plan-duration';
-import AddMoney from './dashboard/plans/plan-add-money';
-import PlanAmount from './dashboard/plans/plan-amount';
-import AutoInvest from './dashboard/plans/plan-auto-invest';
+
+import { NavigationContainer } from '@react-navigation/native';
 
 if (!__DEV__) {
   console.log = () => null;
 }
 
 const App = () => {
-  return <AutoInvest />;
+  return (
+    <NavigationContainer>
+      <AppNavigation />
+    </NavigationContainer>
+  );
 };
 
 export default App;

@@ -1,11 +1,11 @@
 import React from 'react';
 import { StyleSheet, Image } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { images } from '../images';
-import { normalColors as colors } from '../colors';
-import { getBottomSpace, hp } from '../shared/responsive-dimension';
-import Dashboard from '../dashboard/home';
-import Plan from '../dashboard/plan';
+import { images } from '../../images';
+import { normalColors as colors } from '../../colors';
+import { getBottomSpace, hp } from '../../shared/responsive-dimension';
+import Dashboard from '../../dashboard/home';
+import Plan from '../../dashboard/plans';
 
 const { icons } = images;
 
