@@ -42,10 +42,10 @@ export const styles = StyleSheet.create({
     paddingVertical: hp(8),
   },
   inputBox: {
-    height: hp(30),
-    padding: 0,
+    height: hp(50),
+    paddingBottom: hp(10),
     width: '100%',
-    ...main.semiBoldText16,
+    ...main.semiBoldText20,
   },
   //drop-down styles
   androidPicker: {

@@ -8,17 +8,20 @@ const { main } = globalStyle(colors);
 
 export const styles = StyleSheet.create({
   bottomContainer: {
-    marginHorizontal: hp(12),
-    marginVertical: hp(10),
+    marginHorizontal: hp(16),
+    marginVertical: hp(20),
   },
 
   amount: {
     ...main.boldText16,
     paddingLeft: hp(11),
   },
-  text: {
-    ...main.regularText14,
-    paddingLeft: hp(11),
+  questionCount: {
+    ...main.regularText16,
+  },
+  planName: {
+    ...main.semiBoldText20,
+    paddingBottom: hp(11),
   },
   percentContainer: {
     position: 'absolute',
