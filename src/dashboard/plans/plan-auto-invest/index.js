@@ -1,10 +1,14 @@
+/* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import { View, Text, TextInput, TouchableOpacity } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, Image } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { HeaderBar, LongButton } from '../../../shared';
 import { styles } from './style';
 import { hp, wp } from '../../../shared/responsive-dimension';
 import { normalColors as colors } from '../../../colors';
+import { images } from '../../../images';
+
+const { icons } = images;
 
 const AutoInvest = () => {
   return (
@@ -20,6 +24,55 @@ const AutoInvest = () => {
         <Text style={styles.instructionText}>
           This amount will be automatically charged{'\n'} to your Rise Wallet.
         </Text>
+        <View style={styles.listContainer}>
+          <View style={styles.listItem}>
+            <Text style={styles.columnHeading}>Start Immediately</Text>
+            <View
+              style={{
+                flexDirection: 'row',
+                alignItems: 'center',
+              }}>
+              <Text style={styles.columnText}>Yes</Text>
+              <Image
+                source={icons.arrow2}
+                resizeMode="contain"
+                style={styles.arrow}
+              />
+            </View>
+          </View>
+          <View style={styles.listItem}>
+            <Text style={styles.columnHeading}>Frequency</Text>
+            <View
+              style={{
+                flexDirection: 'row',
+                alignItems: 'center',
+              }}>
+              <Text style={styles.columnText}>Monthly / 28th of Month</Text>
+              <Image
+                source={icons.arrow2}
+                resizeMode="contain"
+                style={styles.arrow}
+              />
+            </View>
+          </View>
+          <View style={styles.listItem}>
+            <Text style={styles.columnHeading}>No Linked Card</Text>
+            <View
+              style={{
+                flexDirection: 'row',
+                alignItems: 'center',
+              }}>
+              <View style={styles.linkCard}>
+                <Text style={styles.columnText}>Link a card</Text>
+              </View>
+              <Image
+                source={icons.arrow2}
+                resizeMode="contain"
+                style={styles.arrow}
+              />
+            </View>
+          </View>
+        </View>
       </View>
     </SafeAreaView>
   );

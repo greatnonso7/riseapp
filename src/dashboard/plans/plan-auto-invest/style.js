@@ -15,13 +15,7 @@ export const styles = StyleSheet.create({
     ...main.boldText16,
     paddingLeft: hp(11),
   },
-  questionCount: {
-    ...main.regularText16,
-  },
-  planName: {
-    ...main.semiBoldText18,
-    paddingBottom: hp(11),
-  },
+
   interestContainer: {
     borderRadius: hp(10),
     alignItems: 'center',
@@ -29,37 +23,25 @@ export const styles = StyleSheet.create({
     padding: hp(14),
     backgroundColor: 'rgba(131, 143, 145, 0.05)',
   },
-  radio: {
-    width: wp(15),
+
+  arrow: {
     height: hp(15),
-    position: 'relative',
-    right: hp(10),
+    width: wp(10),
+    marginLeft: hp(15),
   },
-  updateText: {
-    ...main.regularText12,
-    color: '#838F91',
+  listContainer: {
+    marginTop: hp(30),
+    flexDirection: 'column',
   },
-  formContainer: {
-    marginTop: hp(10),
-  },
-  nairaText: {
-    ...main.semiBoldText28,
-    paddingLeft: hp(20),
-  },
-  dollarText: {
-    ...main.semiBoldText28,
-    paddingLeft: hp(20),
-  },
-  nairaAmount: { ...main.semiBoldText24 },
-  dollarAmount: { ...main.semiBoldText24, paddingBottom: hp(10) },
-  amountHolder: {
+  listItem: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginBottom: hp(16),
-    paddingRight: hp(15),
+    borderBottomWidth: 0.8,
+    paddingBottom: hp(16),
+    paddingTop: hp(16),
+    borderBottomColor: '#B5B5B5',
   },
-
   instructionText: {
     ...main.regularText16,
     color: '#838F91',
@@ -68,7 +50,13 @@ export const styles = StyleSheet.create({
     paddingBottom: hp(10),
     paddingRight: hp(10),
   },
-
+  columnText: {
+    ...main.regularText16,
+  },
+  columnHeading: {
+    ...main.regularText18,
+    color: '#838F91',
+  },
   time: {
     ...main.boldText28,
     color: '#838F91',
