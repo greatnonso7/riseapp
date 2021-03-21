@@ -115,6 +115,12 @@ export const globalStyle = (colors = normalColors) => ({
       ...regular,
     },
 
+    regularText17: {
+      fontSize: hp(17),
+      lineHeight: hp(24),
+      ...regular,
+    },
+
     regularText18: {
       fontSize: hp(18),
       lineHeight: hp(26),

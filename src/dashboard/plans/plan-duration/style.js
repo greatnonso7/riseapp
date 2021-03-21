@@ -38,6 +38,35 @@ export const styles = StyleSheet.create({
     ...main.semiBoldText12,
     color: colors.white,
   },
+  text: {
+    ...main.regularText17,
+    textAlign: 'center',
+  },
+  cardContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginHorizontal: wp(30),
+    marginTop: hp(16),
+  },
+  card: {
+    height: hp(80),
+    width: wp(80),
+    backgroundColor: '#E6F5F6',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: hp(5),
+    borderWidth: hp(1),
+    borderColor: '#0898A0',
+  },
+  time: {
+    ...main.boldText28,
+    color: '#838F91',
+  },
+  months: {
+    ...main.regularText16,
+    opacity: 0.5,
+  },
   percentText: {
     ...main.boldText30,
     color: colors.taelDark,
