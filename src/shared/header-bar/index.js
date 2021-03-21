@@ -1,3 +1,4 @@
+/* eslint-disable react-native/no-inline-styles */
 import React from 'react';
 import {
   TouchableOpacity,
@@ -10,6 +11,7 @@ import {
 import { styles } from './style';
 import PropTypes from 'prop-types';
 import { images } from '../../images';
+import { hp } from '../responsive-dimension';
 
 const { icons } = images;
 
@@ -37,7 +39,11 @@ const HeaderBar = ({
 }) => {
   const renderHeaderLeft = () => {
     if (headerLeft) {
-      return <View style={styles.headerLeftIconContainer}>{headerLeft}</View>;
+      return (
+        <View style={{ position: 'absolute', left: hp(10), top: hp(5) }}>
+          <Text style={styles.headerLeftTitle}>{headerLeft}</Text>
+        </View>
+      );
     }
     if (leftIcon || hasBackButton) {
       return (
@@ -69,7 +75,11 @@ const HeaderBar = ({
   };
   const renderHeaderRight = () => {
     if (headerRight) {
-      return <View style={styles.headerRightIconContainer}>{headerRight}</View>;
+      return (
+        <View style={styles.headerRightTitle}>
+          <Text>{headerRight}</Text>
+        </View>
+      );
     }
     if (rightIcon) {
       return (

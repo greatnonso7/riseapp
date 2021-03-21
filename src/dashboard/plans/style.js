@@ -6,11 +6,9 @@ import { globalStyle } from '../../style';
 const { main } = globalStyle(colors);
 
 export const styles = StyleSheet.create({
-  walletContainer: {
-    width: wp(343),
-    height: hp(150),
-    justifyContent: 'center',
-    marginHorizontal: hp(16),
+  arrow: {
+    width: wp(6),
+    height: hp(10),
   },
   walletText: {
     ...main.lightText16,
@@ -119,7 +117,6 @@ export const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
-    paddingTop: hp(10),
     backgroundColor: colors.white,
   },
 });

@@ -13,7 +13,7 @@ const { icons } = images;
 const Dashboard = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <HeaderBar headerTitle="Wallet" />
+      <HeaderBar headerTitle="Wallet" tintColor={'black'} />
       <View style={styles.walletContainer}>
         <View style={styles.walletInfo}>
           <View

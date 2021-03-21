@@ -7,13 +7,14 @@ import AppNavigation from './navigations';
 import 'react-native-gesture-handler';
 import Login from './home/login';
 import Dashboard from './dashboard/home';
+import Plan from './dashboard/plans';
 
 if (!__DEV__) {
   console.log = () => null;
 }
 
 const App = () => {
-  return <Dashboard />;
+  return <Plan />;
 };
 
 export default App;

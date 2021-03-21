@@ -18,6 +18,16 @@ export const styles = StyleSheet.create({
     color: 'black',
     paddingBottom: hp(20),
   },
+  headerLeftTitle: {
+    ...main.boldText28,
+    paddingTop: hp(20),
+  },
+  headerRightTitle: {
+    ...main.boldText24,
+    fontSize: 36,
+    textAlign: 'left',
+    paddingBottom: hp(20),
+  },
   headerButtonTitle: {
     ...main.regularText16,
     color: colors.grey600,
@@ -28,8 +38,8 @@ export const styles = StyleSheet.create({
     resizeMode: 'contain',
   },
   headerLeftIcon: {
-    height: hp(24),
-    width: hp(24),
+    height: hp(44),
+    width: hp(44),
     resizeMode: 'contain',
   },
   headerLeftIconContainer: {

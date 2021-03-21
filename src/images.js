@@ -11,5 +11,6 @@ export const images = {
     failedDeposit: require('./assets/images/icons/failedDeposit.png'),
     transferPlan: require('./assets/images/icons/transferPlan.png'),
     pending: require('./assets/images/icons/bankTransfer.png'),
+    arrow: require('./assets/images/icons/arrow.png'),
   },
 };

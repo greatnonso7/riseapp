@@ -23,9 +23,9 @@ const TouchItem = ({ noFeedback, onPress, children, ...props }) => {
     return (
       <TouchableNativeFeedback
         hitSlop={{ top: 5, bottom: 5, left: 5, right: 5 }}
-        {...this.props}
+        {...props}
         background={TouchableNativeFeedback.Ripple('#EEE')}>
-        <View {...this.props}>{this.props.children}</View>
+        <View {...props}>{children}</View>
       </TouchableNativeFeedback>
     );
   };
@@ -33,8 +33,8 @@ const TouchItem = ({ noFeedback, onPress, children, ...props }) => {
     return (
       <TouchableWithoutFeedback
         hitSlop={{ top: 5, bottom: 5, left: 5, right: 5 }}
-        {...this.props}>
-        <View {...this.props}>{this.props.children}</View>
+        {...props}>
+        <View {...props}>{children}</View>
       </TouchableWithoutFeedback>
     );
   };
