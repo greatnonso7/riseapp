@@ -5,7 +5,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { HeaderBar, LongButton } from '../../shared';
 import { styles } from './style';
 import { images } from '../../images';
-import { hp, wp } from '../../shared/responsive-dimension';
+import { hp, wp, screenHeight } from '../../shared/responsive-dimension';
 
 const { icons, illustrations } = images;
 
@@ -48,7 +48,17 @@ const RealEstate = () => {
             </View>
           </View>
         ))}
-        <LongButton title={'Get Started'} />
+      </View>
+      <View
+        style={{
+          marginHorizontal: hp(25),
+          position: 'relative',
+          justifyContent: 'center',
+        }}>
+        <LongButton
+          title={'Get Started'}
+          buttonStyle={styles.buttonContainer}
+        />
       </View>
     </SafeAreaView>
   );
