@@ -119,7 +119,6 @@ export const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
-    paddingTop: hp(10),
     backgroundColor: colors.white,
   },
 });

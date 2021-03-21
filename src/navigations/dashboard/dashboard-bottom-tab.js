@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Image } from 'react-native';
+import { Image } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { images } from '../../images';
 import { normalColors as colors } from '../../colors';
@@ -13,8 +13,9 @@ const TabIcon = ({ isFocused, icon }) => {
   return (
     <Image
       source={icon}
+      resizeMode="contain"
       style={[
-        { width: hp(20), height: hp(20), marginBottom: hp(2) },
+        { width: hp(25), height: hp(25), marginBottom: hp(2) },
         isFocused && { tintColor: colors.taelDark },
       ]}
     />
@@ -31,17 +32,18 @@ const DashboardBottomTab = ({ route }) => {
         activeTintColor: colors.taelDark,
         inactiveTintColor: colors.grey400,
         labelStyle: {
-          fontFamily: 'Galion-Medium',
+          fontFamily: 'Gelion-Medium',
           fontSize: hp(12),
           lineHeight: hp(16),
+          marginBottom: hp(6),
         },
         tabStyle: {
-          height: hp(56),
-          paddingVertical: hp(5),
+          height: hp(70),
+          paddingVertical: hp(15),
         },
         style: {
           backgroundColor: colors.white,
-          height: hp(56) + getBottomSpace(),
+          height: hp(76) + getBottomSpace(),
         },
       }}>
       <Tab.Screen
@@ -59,7 +61,7 @@ const DashboardBottomTab = ({ route }) => {
             <TabIcon icon={icons.plan} isFocused={focused} />
           ),
         }}
-        name="Plan"
+        name="Plans"
         component={Plan}
       />
     </Tab.Navigator>

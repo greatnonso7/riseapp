@@ -25,7 +25,13 @@ const Dashboard = () => {
                 paddingLeft: hp(20),
               }}>
               <Text style={styles.walletText}>Wallet Balance</Text>
-              <Image source={icons.eyeClose} style={styles.eyeClose} />
+              <TouchableOpacity>
+                <Image
+                  source={icons.eyeClose}
+                  resizeMode="contain"
+                  style={styles.eyeClose}
+                />
+              </TouchableOpacity>
             </View>
             <Image source={icons.wallet} style={styles.wallet} />
           </View>
