@@ -9,13 +9,14 @@ import Login from './home/login';
 import Dashboard from './dashboard/home';
 import Plan from './dashboard/plans';
 import AllPlans from './dashboard/plans/all-plans';
+import RealEstate from './dashboard/real-estate';
 
 if (!__DEV__) {
   console.log = () => null;
 }
 
 const App = () => {
-  return <AllPlans />;
+  return <RealEstate />;
 };
 
 export default App;

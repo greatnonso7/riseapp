@@ -2,6 +2,7 @@ import { StyleSheet } from 'react-native';
 import { wp, hp } from '../../shared/responsive-dimension';
 import { normalColors as colors } from '../../colors';
 import { globalStyle } from '../../style';
+import DeviceInfo from 'react-native-device-info';
 
 const { main } = globalStyle(colors);
 
@@ -12,9 +13,9 @@ export const styles = StyleSheet.create({
     marginLeft: hp(3),
     marginTop: hp(4),
   },
-  planContainer: {
-    marginVertical: hp(30),
-    marginHorizontal: hp(15),
+  infoContainer: {
+    marginVertical: hp(20),
+    marginHorizontal: hp(25),
   },
   plansHeader: {
     flexDirection: 'row',
@@ -60,10 +61,12 @@ export const styles = StyleSheet.create({
     borderRadius: hp(6),
   },
   text: {
-    ...main.regularText14,
+    ...main.regularText18,
+    textAlign: 'center',
   },
   container: {
     flex: 1,
+    paddingTop: DeviceInfo.hasNotch() ? 0 : hp(15),
     backgroundColor: colors.white,
   },
 });

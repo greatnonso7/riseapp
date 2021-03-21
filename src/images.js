@@ -18,4 +18,7 @@ export const images = {
     plan1: require('./assets/images/plans/plan2.png'),
     plan2: require('./assets/images/plans/plan3.png'),
   },
+  illustrations: {
+    realEstate: require('./assets/images/illustrations/real-estate.png'),
+  },
 };
