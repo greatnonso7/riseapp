@@ -12,6 +12,7 @@ export const images = {
     transferPlan: require('./assets/images/icons/transferPlan.png'),
     pending: require('./assets/images/icons/bankTransfer.png'),
     arrow: require('./assets/images/icons/arrow.png'),
+    close: require('./assets/images/icons/close.png'),
   },
   plans: {
     plan1: require('./assets/images/plans/plan2.png'),
