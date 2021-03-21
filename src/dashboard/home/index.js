@@ -36,11 +36,19 @@ const Dashboard = () => {
         </View>
       </View>
       <View style={styles.buttonContainer}>
-        <TouchableOpacity style={[styles.headerButton]}>
-          <Text>Send Money</Text>
+        <TouchableOpacity
+          activeOpacity={0.6}
+          style={[styles.button, { backgroundColor: colors.tael }]}>
+          <Text style={[styles.text, { color: colors.taelDark }]}>
+            Send Money
+          </Text>
         </TouchableOpacity>
-        <TouchableOpacity>
-          <Text>Fund Wallet</Text>
+        <TouchableOpacity
+          activeOpacity={0.6}
+          style={[styles.button, { backgroundColor: colors.taelDark }]}>
+          <Text style={[styles.text, { color: colors.white }]}>
+            Fund Wallet
+          </Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>

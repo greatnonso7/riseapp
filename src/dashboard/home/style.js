@@ -188,15 +188,18 @@ export const styles = StyleSheet.create({
   buttonContainer: {
     marginHorizontal: hp(20),
     marginVertical: hp(20),
+    flexDirection: 'row',
+    justifyContent: 'space-between',
   },
-  headerButton: {
-    width: wp(100),
-    height: hp(48),
+  button: {
+    width: wp(160),
+    height: hp(65),
     justifyContent: 'center',
     alignItems: 'center',
-    // borderColor: 'white',
-    borderWidth: 1,
-    paddingBottom: hp(16),
+    borderRadius: hp(6),
+  },
+  text: {
+    ...main.boldText16,
   },
   header: {
     width: '100%',
