@@ -45,10 +45,16 @@ const PlanAmount = () => {
             <Text style={styles.dollarText}>$</Text>
             <TextInput style={styles.dollarAmount} value={'10.00'} />
           </View>
+          <View style={styles.rateContainer}>
+            <Text style={styles.riseRate}>$1 = ₦420</Text>
+            <View style={styles.whyRateContainer}>
+              <Text style={styles.whyRate}>Why this rate?</Text>
+            </View>
+          </View>
         </View>
         <View
           style={{
-            marginTop: hp(40),
+            marginTop: hp(10),
             justifyContent: 'center',
             alignItems: 'center',
           }}>
