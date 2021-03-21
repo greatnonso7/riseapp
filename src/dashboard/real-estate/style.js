@@ -60,6 +60,24 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     borderRadius: hp(6),
   },
+  question: {
+    ...main.semiBoldText20,
+    paddingLeft: hp(17),
+  },
+  answer: {
+    paddingLeft: hp(17),
+    flexShrink: 1,
+    flexWrap: 'wrap',
+    ...main.regularText14,
+  },
+  questionsContainer: {
+    marginHorizontal: hp(20),
+  },
+  icons: {
+    height: hp(45),
+    width: wp(45),
+    marginBottom: hp(20),
+  },
   text: {
     ...main.regularText18,
     textAlign: 'center',

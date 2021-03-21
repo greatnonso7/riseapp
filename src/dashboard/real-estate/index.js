@@ -2,7 +2,7 @@
 import React from 'react';
 import { View, Text, Image } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { HeaderBar } from '../../shared';
+import { HeaderBar, LongButton } from '../../shared';
 import { styles } from './style';
 import { images } from '../../images';
 import { hp, wp } from '../../shared/responsive-dimension';
@@ -28,8 +28,54 @@ const RealEstate = () => {
           style={{ width: wp(212), height: hp(124), alignSelf: 'center' }}
         />
       </View>
+      <View style={styles.questionsContainer}>
+        {Questions.map(item => (
+          <View
+            key={item.id}
+            style={{
+              flexDirection: 'row',
+              alignItems: 'center',
+              marginBottom: hp(16),
+            }}>
+            <Image
+              source={item.icon}
+              resizeMode="contain"
+              style={styles.icons}
+            />
+            <View>
+              <Text style={styles.question}>{item.question}</Text>
+              <Text style={styles.answer}>{item.answer}</Text>
+            </View>
+          </View>
+        ))}
+        <LongButton title={'Get Started'} />
+      </View>
     </SafeAreaView>
   );
 };
+
+const Questions = [
+  {
+    id: 1,
+    icon: icons.question,
+    question: 'Answer a few questions',
+    answer:
+      'Let’s help you tailor your plan to help you \nachieve financial freedom.',
+  },
+  {
+    id: 2,
+    icon: icons.calender,
+    question: 'Fund periodically',
+    answer:
+      'Daily, weekly, monthly? It’s totally up to you. \nTell us how often you’ll like to add  \nto your plan.',
+  },
+  {
+    id: 3,
+    icon: icons.settings,
+    question: 'Adjust when needed',
+    answer:
+      'You have control over how you build wealth. \nYou can adjust your plan as you please.',
+  },
+];
 
 export default RealEstate;

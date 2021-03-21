@@ -13,7 +13,7 @@ export const styles = StyleSheet.create({
     alignSelf: 'center',
   },
   longButton: {
-    backgroundColor: colors.red,
+    backgroundColor: colors.taelDark,
     borderRadius: wp(4),
     width: wp(327),
     height: hp(56),

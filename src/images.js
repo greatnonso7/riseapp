@@ -13,6 +13,9 @@ export const images = {
     pending: require('./assets/images/icons/bankTransfer.png'),
     arrow: require('./assets/images/icons/arrow.png'),
     close: require('./assets/images/icons/close.png'),
+    calender: require('./assets/images/icons/calender.png'),
+    question: require('./assets/images/icons/question-mark.png'),
+    settings: require('./assets/images/icons/settings.png'),
   },
   plans: {
     plan1: require('./assets/images/plans/plan2.png'),
