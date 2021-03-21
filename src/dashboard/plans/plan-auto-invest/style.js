@@ -23,7 +23,12 @@ export const styles = StyleSheet.create({
     padding: hp(14),
     backgroundColor: 'rgba(131, 143, 145, 0.05)',
   },
-
+  settingText: {
+    ...main.regularText16,
+    color: '#838F91',
+    marginTop: hp(26),
+    textAlign: 'center',
+  },
   arrow: {
     height: hp(15),
     width: wp(10),
@@ -49,6 +54,26 @@ export const styles = StyleSheet.create({
     marginTop: hp(10),
     paddingBottom: hp(10),
     paddingRight: hp(10),
+  },
+  linkCard: {
+    width: hp(80),
+    height: hp(25),
+    backgroundColor: colors.taelDark,
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: hp(8),
+    shadowColor: colors.taelDark,
+    shadowOffset: {
+      width: 0,
+      height: 10,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+
+    elevation: 10,
+  },
+  text: {
+    ...main.regularText13,
   },
   columnText: {
     ...main.regularText16,

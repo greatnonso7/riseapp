@@ -56,14 +56,23 @@ const AutoInvest = () => {
             </View>
           </View>
           <View style={styles.listItem}>
-            <Text style={styles.columnHeading}>No Linked Card</Text>
+            <View>
+              <Text style={styles.columnHeading}>No Linked Card</Text>
+              <Text style={styles.text}>
+                Keep your investments going if your {'\n'}wallet balance it too
+                low.
+              </Text>
+            </View>
             <View
               style={{
                 flexDirection: 'row',
                 alignItems: 'center',
               }}>
               <View style={styles.linkCard}>
-                <Text style={styles.columnText}>Link a card</Text>
+                <Text
+                  style={[styles.columnText, { color: 'white', fontSize: 14 }]}>
+                  Link A Card
+                </Text>
               </View>
               <Image
                 source={icons.arrow2}
@@ -72,6 +81,17 @@ const AutoInvest = () => {
               />
             </View>
           </View>
+        </View>
+        <Text style={styles.settingText}>
+          You can update these settings later.
+        </Text>
+        <View
+          style={{
+            justifyContent: 'center',
+            alignItems: 'center',
+            marginTop: hp(120),
+          }}>
+          <LongButton title={'Continue'} />
         </View>
       </View>
     </SafeAreaView>
