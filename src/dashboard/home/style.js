@@ -153,11 +153,22 @@ export const styles = StyleSheet.create({
     backgroundColor: colors.white,
   },
   transactionContainer: {
-    marginVertical: hp(20),
     marginHorizontal: hp(20),
   },
   transactText: {
     ...main.regularText20,
+  },
+  transactionList: {
+    borderBottomWidth: 0.3,
+    borderBottomColor: '#B5B5B5',
+    marginBottom: hp(10),
+    paddingBottom: hp(10),
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  amount: {
+    ...main.boldText20,
+    paddingVertical: hp(10),
   },
   transactView: {
     ...main.regularText16,

@@ -6,5 +6,10 @@ export const images = {
     arrowLeft: require('./assets/images/icons/back.png'),
     wallet: require('./assets/images/icons/wallet.png'),
     transfer: require('./assets/images/icons/transfer.png'),
+    withdrawal: require('./assets/images/icons/withdrawal.png'),
+    deposit: require('./assets/images/icons/deposit.png'),
+    failedDeposit: require('./assets/images/icons/failedDeposit.png'),
+    transferPlan: require('./assets/images/icons/transferPlan.png'),
+    pending: require('./assets/images/icons/bankTransfer.png'),
   },
 };

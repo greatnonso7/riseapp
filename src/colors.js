@@ -23,6 +23,7 @@ const sharedColors = {
   skyBlue: '#716EF6',
   lightSkyBlue: '#ECEBFD',
   pink: '#F86267',
+  warning: '#FF9C00',
   green: '#179F35',
   green500: '#6DC122',
   lightGreen: '#6ABAA7',
