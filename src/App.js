@@ -6,13 +6,14 @@ import store from './redux/store';
 import AppNavigation from './navigations';
 import 'react-native-gesture-handler';
 import Login from './home/login';
+import Dashboard from './dashboard/home';
 
 if (!__DEV__) {
   console.log = () => null;
 }
 
 const App = () => {
-  return <Login />;
+  return <Dashboard />;
 };
 
 export default App;
