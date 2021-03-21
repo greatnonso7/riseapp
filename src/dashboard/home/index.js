@@ -10,7 +10,7 @@ import { hp, wp } from '../../shared/responsive-dimension';
 
 const { icons } = images;
 
-const Dashboard = () => {
+const Dashboard = ({ navigation: { navigate, goBack } }) => {
   return (
     <SafeAreaView style={styles.container}>
       <HeaderBar headerTitle="Wallet" tintColor={'black'} />
@@ -51,6 +51,7 @@ const Dashboard = () => {
         </TouchableOpacity>
         <TouchableOpacity
           activeOpacity={0.6}
+          onPress={() => navigate('DebitCard')}
           style={[styles.button, { backgroundColor: colors.taelDark }]}>
           <Text style={[styles.text, { color: colors.white }]}>
             Fund Wallet

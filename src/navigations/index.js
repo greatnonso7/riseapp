@@ -2,6 +2,7 @@ import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import AuthNav from './onboarding';
 import DashboardBottomTab from './dashboard/dashboard-bottom-tab';
+import DebitCard from '../dashboard/debit-card';
 
 const Stack = createStackNavigator();
 
@@ -17,6 +18,13 @@ const AppNav = () => {
         name="Dashboard"
         options={{ headerShown: false }}
         component={DashboardBottomTab}
+      />
+      <Stack.Screen
+        name="DebitCard"
+        component={DebitCard}
+        options={{
+          headerShown: false,
+        }}
       />
     </Stack.Navigator>
   );
