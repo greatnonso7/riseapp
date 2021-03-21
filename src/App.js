@@ -13,13 +13,14 @@ import RealEstate from './dashboard/real-estate';
 import PlanName from './dashboard/plans/plan-name';
 import PlanDuration from './dashboard/plans/plan-duration';
 import AddMoney from './dashboard/plans/plan-add-money';
+import PlanAmount from './dashboard/plans/plan-amount';
 
 if (!__DEV__) {
   console.log = () => null;
 }
 
 const App = () => {
-  return <AddMoney />;
+  return <PlanAmount />;
 };
 
 export default App;

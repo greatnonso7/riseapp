@@ -1,3 +1,4 @@
+/* eslint-disable react-native/no-inline-styles */
 import React from 'react';
 import { View, Text, Image, TouchableOpacity } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -10,12 +11,12 @@ import { images } from '../../../images';
 
 const { illustrations } = images;
 
-const AddMoney = () => {
+const PlanAmount = () => {
   return (
     <SafeAreaView style={styles.container}>
       <HeaderBar hasBackButton headerTitle="Add Money" />
       <View style={styles.bottomContainer}>
-        <Text style={styles.questionCount}>Question 3 of 4</Text>
+        <Text style={styles.questionCount}>Question 4 of 4</Text>
         <View style={{ paddingTop: hp(11) }}>
           <Progress
             width={wp(335)}
@@ -24,15 +25,13 @@ const AddMoney = () => {
             unfilledColor={colors.tael}
             borderColor={colors.tael}
             borderRadius={hp(10)}
-            progress={0.75}
+            progress={1}
           />
         </View>
       </View>
       <View style={styles.bottomContainer}>
-        <Text style={styles.planName}>
-          How often do you want to add money to this goal?
-        </Text>
-        <Text style={styles.text}>You can update this setting later.</Text>
+        <Text style={styles.planName}>How much can you add monthly?</Text>
+        <Text style={styles.updateText}>You can always update this later.</Text>
         <View>
           {Values.map(item => (
             <TouchableOpacity
@@ -48,7 +47,18 @@ const AddMoney = () => {
             </TouchableOpacity>
           ))}
         </View>
-        <View style={{ marginTop: hp(40) }}>
+        <View
+          style={{
+            marginTop: hp(40),
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}>
+          <View style={{ marginHorizontal: hp(10) }}>
+            <Text style={styles.text}>
+              This plan will be denominated in USD. Exchange rate shown is not
+              fixed by Rise and will fluctuate over the period of your plan.
+            </Text>
+          </View>
           <LongButton title={'Continue'} />
         </View>
       </View>
@@ -74,4 +84,4 @@ const Values = [
   },
 ];
 
-export default AddMoney;
+export default PlanAmount;
