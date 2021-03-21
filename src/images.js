@@ -5,5 +5,6 @@ export const images = {
     plan: require('./assets/images/icons/plans.png'),
     arrowLeft: require('./assets/images/icons/back.png'),
     wallet: require('./assets/images/icons/wallet.png'),
+    transfer: require('./assets/images/icons/transfer.png'),
   },
 };

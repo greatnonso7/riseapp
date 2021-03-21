@@ -51,8 +51,24 @@ const Dashboard = () => {
           </Text>
         </TouchableOpacity>
       </View>
+      <View style={styles.transactionContainer}>
+        <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+          <Text style={styles.transactText}>Recent Transactions</Text>
+          <TouchableOpacity activeOpacity={0.5}>
+            <Text style={styles.transactView}>View All</Text>
+          </TouchableOpacity>
+        </View>
+      </View>
     </SafeAreaView>
   );
 };
+
+const Data = [
+  {
+    type: 'Deposit',
+    date: 'Apr 28, 2020',
+    amount: '- $2,605',
+  },
+];
 
 export default Dashboard;

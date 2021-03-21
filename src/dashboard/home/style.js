@@ -152,38 +152,17 @@ export const styles = StyleSheet.create({
     width: deviceWidth,
     backgroundColor: colors.white,
   },
-  gridIcon: {
-    height: wp(32),
-    width: wp(32),
-    resizeMode: 'contain',
-    marginBottom: wp(10),
-    // borderWidth: 1,
+  transactionContainer: {
+    marginVertical: hp(20),
+    marginHorizontal: hp(20),
   },
-  item: {
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    flex: 1,
-    margin: 0.7,
-    height: wp(88),
-    paddingTop: wp(10),
-    // borderWidth: 1,
+  transactText: {
+    ...main.regularText20,
   },
-  itemInvisible: {
-    // backgroundColor: 'transparent',
-    backgroundColor: 'white',
-    zIndex: -100,
-  },
-  itemText: {
-    ...main.regularText12,
-    lineHeight: hp(15),
-    textAlign: 'center',
-    // borderWidth: 1,
-  },
-
-  headerIconLabel: {
+  transactView: {
     ...main.regularText16,
-    color: colors.white,
-    marginTop: hp(6),
+    color: colors.taelDark,
+    paddingTop: hp(5),
   },
   buttonContainer: {
     marginHorizontal: hp(20),
