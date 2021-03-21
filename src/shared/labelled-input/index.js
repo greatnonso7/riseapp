@@ -33,7 +33,7 @@ const LabelledInput: React.FC<Props> = React.forwardRef(
   ) => {
     const [isTyping, setTypingState] = useState(false);
     const [isPasswordVisible, setPasswordVisible] = useState(false);
-    const { eyeClose, eyeOpen } = images.icons;
+    const { eyeClose } = images.icons;
     let showLabel = value || isTyping;
     return (
       <View
@@ -64,10 +64,7 @@ const LabelledInput: React.FC<Props> = React.forwardRef(
           <TouchItem
             style={styles.rightIconContainer}
             onPress={() => setPasswordVisible(!isPasswordVisible)}>
-            <Image
-              style={styles.eyeIcon}
-              source={!isPasswordVisible ? eyeClose : eyeOpen}
-            />
+            <Image style={styles.eyeIcon} source={eyeClose} />
           </TouchItem>
         )}
       </View>

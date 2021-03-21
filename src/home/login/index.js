@@ -2,13 +2,14 @@ import React from 'react';
 import { View, Text } from 'react-native';
 import { LabelledInput, LongButton } from '../../shared';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
-import { normalColors as colors } from '../../colors';
 import { styles } from './style';
 import { isIOS } from '../../utils/helpers';
-import { hp, wp } from '../../shared/responsive-dimension';
+import { hp } from '../../shared/responsive-dimension';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { useNavigation } from '@react-navigation/native';
 
 const Login = () => {
+  const navigation = useNavigation();
   const [currentInput, setCurrentInput] = React.useState('');
 
   var extraHeight = isIOS
@@ -39,9 +40,10 @@ const Login = () => {
           numberOfLines={1}
         />
         <LabelledInput
-          label="Email Address"
+          label="Password"
           containerStyle={{ marginBottom: hp(12) }}
           scrollEnabled={true}
+          isPassword
           textContentType="emailAddress"
           keyboardType="email-address"
           autoCapitalize="none"
@@ -49,7 +51,11 @@ const Login = () => {
           autoCompleteType="email"
           numberOfLines={1}
         />
-        <LongButton buttonStyle={styles.loginButton} title={'Sign in'} />
+        <LongButton
+          onPress={() => navigation.navigate('Dashboard', { screen: 'Home' })}
+          buttonStyle={styles.loginButton}
+          title={'Sign in'}
+        />
       </View>
     </SafeAreaView>
   );

@@ -7,8 +7,8 @@ const { main } = globalStyle(colors);
 
 export const styles = StyleSheet.create({
   eyeIcon: {
-    height: wp(24),
-    width: wp(24),
+    height: wp(20),
+    width: wp(30),
   },
   rightIconContainer: {
     position: 'absolute',
