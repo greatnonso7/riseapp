@@ -38,6 +38,25 @@ export const styles = StyleSheet.create({
     ...main.regularText12,
     color: '#838F91',
   },
+  formContainer: {
+    marginTop: hp(10),
+  },
+  nairaText: {
+    ...main.semiBoldText28,
+    paddingLeft: hp(20),
+  },
+  dollarText: {
+    ...main.semiBoldText28,
+    paddingLeft: hp(20),
+  },
+  nairaAmount: { ...main.semiBoldText28 },
+  dollarAmount: { ...main.semiBoldText28, paddingBottom: hp(10) },
+  amountHolder: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: hp(16),
+  },
   text: {
     ...main.regularText12,
     color: '#838F91',

@@ -1,6 +1,6 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import { View, Text, Image, TouchableOpacity } from 'react-native';
+import { View, Text, Image, TouchableOpacity, TextInput } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { HeaderBar, LongButton } from '../../../shared';
 import { styles } from './style';
@@ -32,20 +32,19 @@ const PlanAmount = () => {
       <View style={styles.bottomContainer}>
         <Text style={styles.planName}>How much can you add monthly?</Text>
         <Text style={styles.updateText}>You can always update this later.</Text>
-        <View>
-          {Values.map(item => (
-            <TouchableOpacity
-              onPress={() => console.log(item.id)}
-              key={item.id}
-              style={styles.interestContainer}>
-              <Image
-                style={styles.radio}
-                resizeMode="contain"
-                source={item.radio}
-              />
-              <Text style={styles.durationText}>{item.duration}</Text>
-            </TouchableOpacity>
-          ))}
+        <View style={styles.formContainer}>
+          <View style={styles.amountHolder}>
+            <Text style={styles.nairaText}>₦</Text>
+            <Text style={styles.nairaAmount}>4,200.00</Text>
+          </View>
+          <View
+            style={[
+              styles.amountHolder,
+              { backgroundColor: 'rgba(131, 143, 145, 0.05)', height: hp(69) },
+            ]}>
+            <Text style={styles.dollarText}>$</Text>
+            <TextInput style={styles.dollarAmount} value={'10.00'} />
+          </View>
         </View>
         <View
           style={{
