@@ -20,23 +20,35 @@ export const styles = StyleSheet.create({
     ...main.regularText16,
   },
   planName: {
-    ...main.semiBoldText20,
+    ...main.semiBoldText18,
     paddingBottom: hp(11),
   },
-  percentContainer: {
-    position: 'absolute',
-    bottom: hp(50),
-    right: hp(14),
-    height: hp(20),
-    width: hp(75),
-    justifyContent: 'center',
-    alignItems: 'center',
+  interestContainer: {
     borderRadius: hp(10),
-    backgroundColor: colors.green,
+    backgroundColor: 'rgba(131, 143, 145, 0.05)',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginTop: hp(10),
+    flexDirection: 'row',
+    padding: hp(14),
+    height: hp(82),
+    width: wp(343),
   },
   percent: {
     ...main.semiBoldText12,
     color: colors.white,
+  },
+  percentText: {
+    ...main.boldText30,
+    color: colors.taelDark,
+  },
+  returnsText: {
+    ...main.regularText16,
+    color: colors.taelDark,
+  },
+  duration: {
+    ...main.regularText18,
+    textAlign: 'center',
   },
   container: {
     flex: 1,

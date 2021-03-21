@@ -222,6 +222,12 @@ export const globalStyle = (colors = normalColors) => ({
       ...semiBold,
     },
 
+    semiBoldText18: {
+      fontSize: hp(18),
+      lineHeight: hp(26),
+      ...semiBold,
+    },
+
     semiBoldText20: {
       fontSize: hp(20),
       lineHeight: hp(30),
@@ -290,6 +296,11 @@ export const globalStyle = (colors = normalColors) => ({
       ...bold,
     },
 
+    boldText30: {
+      fontSize: hp(30),
+      lineHeight: hp(42),
+      ...bold,
+    },
     boldText36: {
       fontSize: hp(36),
       lineHeight: hp(54),

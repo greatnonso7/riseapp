@@ -16,6 +16,7 @@ export const images = {
     calender: require('./assets/images/icons/calender.png'),
     question: require('./assets/images/icons/question-mark.png'),
     settings: require('./assets/images/icons/settings.png'),
+    bar: require('./assets/images/icons/bar.png'),
   },
   plans: {
     plan1: require('./assets/images/plans/plan2.png'),
