@@ -8,6 +8,8 @@ import { hp, wp } from '../../../shared/responsive-dimension';
 import { normalColors as colors } from '../../../colors';
 import { images } from '../../../images';
 
+const { illustrations } = images;
+
 const AddMoney = () => {
   return (
     <SafeAreaView style={styles.container}>
@@ -31,9 +33,45 @@ const AddMoney = () => {
           How often do you want to add money to this goal?
         </Text>
         <Text style={styles.text}>You can update this setting later.</Text>
+        <View>
+          {Values.map(item => (
+            <TouchableOpacity
+              onPress={() => console.log(item.id)}
+              key={item.id}
+              style={styles.interestContainer}>
+              <Image
+                style={styles.radio}
+                resizeMode="contain"
+                source={item.radio}
+              />
+              <Text style={styles.durationText}>{item.duration}</Text>
+            </TouchableOpacity>
+          ))}
+        </View>
+        <View style={{ marginTop: hp(40) }}>
+          <LongButton title={'Continue'} />
+        </View>
       </View>
     </SafeAreaView>
   );
 };
+
+const Values = [
+  {
+    id: 1,
+    duration: 'Daily',
+    radio: illustrations.radioOff,
+  },
+  {
+    id: 2,
+    duration: 'Weekly',
+    radio: illustrations.radioOn,
+  },
+  {
+    id: 3,
+    duration: 'Monthly',
+    radio: illustrations.radioOff,
+  },
+];
 
 export default AddMoney;

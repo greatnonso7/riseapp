@@ -11,7 +11,6 @@ export const styles = StyleSheet.create({
     marginHorizontal: hp(16),
     marginVertical: hp(20),
   },
-
   amount: {
     ...main.boldText16,
     paddingLeft: hp(11),
@@ -25,14 +24,15 @@ export const styles = StyleSheet.create({
   },
   interestContainer: {
     borderRadius: hp(10),
-    backgroundColor: 'rgba(131, 143, 145, 0.05)',
-    justifyContent: 'space-between',
     alignItems: 'center',
-    marginTop: hp(10),
     flexDirection: 'row',
     padding: hp(14),
-    height: hp(82),
-    width: wp(343),
+  },
+  radio: {
+    width: wp(15),
+    height: hp(15),
+    position: 'relative',
+    right: hp(10),
   },
   percent: {
     ...main.semiBoldText12,
@@ -40,6 +40,7 @@ export const styles = StyleSheet.create({
   },
   text: {
     ...main.regularText16,
+    color: '#838F91',
   },
   cardContainer: {
     flexDirection: 'row',
@@ -74,9 +75,9 @@ export const styles = StyleSheet.create({
     ...main.regularText16,
     color: colors.taelDark,
   },
-  duration: {
-    ...main.regularText18,
-    textAlign: 'center',
+  durationText: {
+    ...main.regularText17,
+    color: '#838F91',
   },
   container: {
     flex: 1,

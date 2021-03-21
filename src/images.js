@@ -24,5 +24,7 @@ export const images = {
   },
   illustrations: {
     realEstate: require('./assets/images/illustrations/real-estate.png'),
+    radioOn: require('./assets/images/illustrations/radioActive.png'),
+    radioOff: require('./assets/images/illustrations/radioInActive.png'),
   },
 };
