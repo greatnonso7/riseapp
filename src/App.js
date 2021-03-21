@@ -14,13 +14,14 @@ import PlanName from './dashboard/plans/plan-name';
 import PlanDuration from './dashboard/plans/plan-duration';
 import AddMoney from './dashboard/plans/plan-add-money';
 import PlanAmount from './dashboard/plans/plan-amount';
+import AutoInvest from './dashboard/plans/plan-auto-invest';
 
 if (!__DEV__) {
   console.log = () => null;
 }
 
 const App = () => {
-  return <PlanAmount />;
+  return <AutoInvest />;
 };
 
 export default App;
