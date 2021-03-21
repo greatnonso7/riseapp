@@ -111,11 +111,7 @@ const HeaderBar = ({
   };
   const renderHeaderTitle = () => {
     if (headerTitle) {
-      return (
-        <Text style={[styles.headerTitle, { color: tintColor }]}>
-          {headerTitle}
-        </Text>
-      );
+      return <Text style={[styles.headerTitle]}>{headerTitle}</Text>;
     }
     if (headerCenter) {
       return headerCenter;

@@ -13,10 +13,7 @@ const { main } = globalStyle(colors);
 
 export const styles = StyleSheet.create({
   headerTitle: {
-    ...main.boldText24,
-    fontSize: 36,
-    color: 'black',
-    paddingBottom: hp(20),
+    ...main.boldText28,
   },
   headerLeftTitle: {
     ...main.boldText28,
