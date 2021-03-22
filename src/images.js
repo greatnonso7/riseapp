@@ -18,6 +18,7 @@ export const images = {
     settings: require('./assets/images/icons/settings.png'),
     bar: require('./assets/images/icons/bar.png'),
     arrow2: require('./assets/images/icons/arrow2.png'),
+    rightArrow: require('./assets/images/icons/rightarrow.png'),
   },
   plans: {
     plan1: require('./assets/images/plans/plan2.png'),
