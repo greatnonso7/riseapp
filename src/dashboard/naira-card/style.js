@@ -14,10 +14,9 @@ export const styles = StyleSheet.create({
     alignItems: 'flex-end',
   },
   bottomContainer: {
-    marginHorizontal: hp(20),
+    marginHorizontal: hp(25),
     marginVertical: hp(20),
     marginTop: hp(40),
-    height: deviceHeight * 0.68,
   },
   formContainer: {
     marginTop: hp(10),

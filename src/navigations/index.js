@@ -4,6 +4,7 @@ import AuthNav from './onboarding';
 import DashboardBottomTab from './dashboard/dashboard-bottom-tab';
 import DebitCard from '../dashboard/debit-card';
 import ConfirmAmount from '../dashboard/confirm-amount';
+import NairaCard from '../dashboard/naira-card';
 
 const Stack = createStackNavigator();
 
@@ -30,6 +31,13 @@ const AppNav = () => {
       <Stack.Screen
         name="ConfirmAmount"
         component={ConfirmAmount}
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Stack.Screen
+        name="NairaCard"
+        component={NairaCard}
         options={{
           headerShown: false,
         }}

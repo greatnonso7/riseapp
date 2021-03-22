@@ -1,12 +1,8 @@
 import React from 'react';
-import { View, Text, Image, TextInput, TouchableOpacity } from 'react-native';
+import { View, Text } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { HeaderBar } from '../../shared';
+import { HeaderBar, LongButton } from '../../shared';
 import { styles } from './style';
-import { images } from '../../images';
-import { hp, wp } from '../../shared/responsive-dimension';
-
-const { icons } = images;
 
 const ConfirmAmount = ({ navigation: { navigate, goBack } }) => {
   return (
@@ -23,11 +19,17 @@ const ConfirmAmount = ({ navigation: { navigate, goBack } }) => {
         <View style={styles.rateContainer}>
           {Data.map(item => (
             <View style={styles.amountHolder} key={item.id}>
-              <Text>{item.text}</Text>
-              <Text>{item.amount}</Text>
+              <Text style={styles.addMoneyText}>{item.text}</Text>
+              <Text style={styles.accountText}>{item.amount}</Text>
             </View>
           ))}
         </View>
+      </View>
+      <View style={{ justifyContent: 'center', alignItems: 'center' }}>
+        <LongButton
+          onPress={() => navigate('NairaCard')}
+          title={'Add ₦4,263'}
+        />
       </View>
     </SafeAreaView>
   );
