@@ -65,6 +65,19 @@ export const styles = StyleSheet.create({
     padding: hp(10),
     color: colors.taelDark,
   },
+  addMoney: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: hp(45),
+    width: wp(337),
+    backgroundColor: colors.taelDark,
+    marginTop: hp(30),
+    borderRadius: hp(10),
+  },
+  addMoneyText: {
+    ...main.boldText16,
+    color: colors.white,
+  },
   accountText: {
     ...main.boldText16,
     color: colors.taelDark,

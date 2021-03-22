@@ -1,6 +1,6 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import { View, Text, Image, TextInput } from 'react-native';
+import { View, Text, Image, TextInput, TouchableOpacity } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { HeaderBar } from '../../shared';
 import { styles } from './style';
@@ -48,6 +48,11 @@ const DebitCard = ({ navigation: { navigate, goBack } }) => {
             <Text style={styles.whyRate}>Why this rate?</Text>
           </View>
         </View>
+      </View>
+      <View style={{ justifyContent: 'center', alignItems: 'center' }}>
+        <TouchableOpacity style={styles.addMoney}>
+          <Text style={styles.addMoneyText}>Add Money</Text>
+        </TouchableOpacity>
       </View>
     </SafeAreaView>
   );
