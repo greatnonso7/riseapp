@@ -9,7 +9,7 @@ import { hp, wp } from '../../shared/responsive-dimension';
 
 const { icons, plans } = images;
 
-const Plan = () => {
+const Plan = ({ navigation: { navigate, goBack } }) => {
   return (
     <SafeAreaView style={styles.container}>
       <HeaderBar headerLeft="Plans" />
@@ -22,6 +22,7 @@ const Plan = () => {
               justifyContent: 'center',
               alignItems: 'center',
             }}
+            onPress={() => navigate('AllPlans')}
             activeOpacity={0.3}>
             <Text style={styles.planText}>See All Your Plans</Text>
             <Image source={icons.arrow} style={styles.arrow} />

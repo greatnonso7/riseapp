@@ -8,10 +8,14 @@ import { hp, wp } from '../../../shared/responsive-dimension';
 
 const { plans } = images;
 
-const AllPlans = () => {
+const AllPlans = ({ navigation: { navigate, goBack } }) => {
   return (
     <SafeAreaView style={styles.container}>
-      <HeaderBar hasBackButton headerTitle="Your Plans" />
+      <HeaderBar
+        onPressLeftIcon={() => goBack()}
+        hasBackButton
+        headerTitle="Your Plans"
+      />
       <View style={{ marginTop: hp(20) }}>
         <FlatList
           data={Data}
