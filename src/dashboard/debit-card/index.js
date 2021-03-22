@@ -50,7 +50,9 @@ const DebitCard = ({ navigation: { navigate, goBack } }) => {
         </View>
       </View>
       <View style={{ justifyContent: 'center', alignItems: 'center' }}>
-        <TouchableOpacity style={styles.addMoney}>
+        <TouchableOpacity
+          onPress={() => navigate('ConfirmAmount')}
+          style={styles.addMoney}>
           <Text style={styles.addMoneyText}>Add Money</Text>
         </TouchableOpacity>
       </View>

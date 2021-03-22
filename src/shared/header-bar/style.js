@@ -13,7 +13,7 @@ const { main } = globalStyle(colors);
 
 export const styles = StyleSheet.create({
   headerTitle: {
-    ...main.boldText28,
+    ...main.boldText24,
   },
   headerLeftTitle: {
     ...main.boldText28,
