@@ -23,11 +23,9 @@ export const styles = StyleSheet.create({
   },
 
   dollarText: {
-    ...main.semiBoldText24,
-    textAlign: 'center',
-    paddingTop: hp(10),
+    ...main.regularText16,
   },
-  nairaAmount: { ...main.semiBoldText24 },
+  nairaAmount: { ...main.regularText13 },
   dollarAmount: {
     ...main.boldText36,
     fontWeight: '900',
@@ -45,23 +43,14 @@ export const styles = StyleSheet.create({
     borderBottomColor: '#B5B5B5',
   },
   rateContainer: {
-    marginTop: hp(20),
-    marginHorizontal: hp(15),
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-evenly',
+    borderBottomWidth: 0.6,
+    paddingBottom: hp(18),
+    borderBottomColor: '#838F91',
   },
 
-  addMoney: {
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: hp(45),
-    width: wp(337),
-    backgroundColor: colors.taelDark,
-    marginTop: hp(30),
-    borderRadius: hp(10),
-  },
-  addMoneyText: {
-    ...main.regularText16,
-    color: '#838F91',
-  },
   accountText: {
     ...main.regularText16,
   },
