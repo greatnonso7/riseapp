@@ -10,10 +10,14 @@ import { images } from '../../../images';
 
 const { illustrations } = images;
 
-const AddMoney = () => {
+const AddMoney = ({ navigation: { navigate, goBack } }) => {
   return (
     <SafeAreaView style={styles.container}>
-      <HeaderBar hasBackButton headerTitle="Add Money" />
+      <HeaderBar
+        onPressLeftIcon={() => goBack()}
+        hasBackButton
+        headerTitle="Add Money"
+      />
       <View style={styles.bottomContainer}>
         <Text style={styles.questionCount}>Question 3 of 4</Text>
         <View style={{ paddingTop: hp(11) }}>
@@ -48,8 +52,11 @@ const AddMoney = () => {
             </TouchableOpacity>
           ))}
         </View>
-        <View style={{ marginTop: hp(40) }}>
-          <LongButton title={'Continue'} />
+        <View style={{ marginTop: hp(30) }}>
+          <LongButton
+            onPress={() => navigate('PlanAmount')}
+            title={'Continue'}
+          />
         </View>
       </View>
     </SafeAreaView>

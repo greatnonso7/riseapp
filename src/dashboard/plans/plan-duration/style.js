@@ -11,6 +11,11 @@ export const styles = StyleSheet.create({
     marginHorizontal: hp(16),
     marginVertical: hp(20),
   },
+  buttonContainer: {
+    position: 'absolute',
+    bottom: hp(40),
+    left: wp(20),
+  },
 
   amount: {
     ...main.boldText16,

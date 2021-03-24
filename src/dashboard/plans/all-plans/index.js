@@ -1,10 +1,11 @@
 import React from 'react';
-import { View, Text, FlatList, Image } from 'react-native';
+import { View, Text, FlatList, Image, TouchableOpacity } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { HeaderBar } from '../../../shared';
 import { styles } from './style';
 import { images } from '../../../images';
 import { hp, wp } from '../../../shared/responsive-dimension';
+import AntDesign from 'react-native-vector-icons/AntDesign';
 
 const { plans } = images;
 
@@ -21,11 +22,13 @@ const AllPlans = ({ navigation: { navigate, goBack } }) => {
           data={Data}
           renderItem={({ item }) => (
             <View key={item.id} style={styles.bottomContainer}>
-              <Image
-                source={item.image}
-                resizeMode={'contain'}
-                style={{ width: wp(163), height: hp(101) }}
-              />
+              <TouchableOpacity onPress={() => navigate('PlanName')}>
+                <Image
+                  source={item.image}
+                  resizeMode={'contain'}
+                  style={{ width: wp(163), height: hp(101) }}
+                />
+              </TouchableOpacity>
               <View style={styles.percentContainer}>
                 <Text style={styles.percent}>{item.percent}</Text>
               </View>

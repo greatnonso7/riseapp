@@ -85,14 +85,14 @@ const AutoInvest = () => {
         <Text style={styles.settingText}>
           You can update these settings later.
         </Text>
-        <View
-          style={{
-            justifyContent: 'center',
-            alignItems: 'center',
-            marginTop: hp(120),
-          }}>
-          <LongButton title={'Continue'} />
-        </View>
+      </View>
+      <View
+        style={{
+          position: 'absolute',
+          bottom: hp(40),
+          left: wp(23),
+        }}>
+        <LongButton title={'Continue'} />
       </View>
     </SafeAreaView>
   );

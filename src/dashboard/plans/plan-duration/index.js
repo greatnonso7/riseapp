@@ -10,10 +10,14 @@ import { images } from '../../../images';
 
 const { icons } = images;
 
-const PlanDuration = () => {
+const PlanDuration = ({ navigation: { navigate, goBack } }) => {
   return (
     <SafeAreaView style={styles.container}>
-      <HeaderBar hasBackButton headerTitle="Duration" />
+      <HeaderBar
+        onPressLeftIcon={() => goBack()}
+        hasBackButton
+        headerTitle="Duration"
+      />
       <View style={styles.bottomContainer}>
         <Text style={styles.questionCount}>Question 2 of 4</Text>
         <View style={{ paddingTop: hp(11) }}>
@@ -63,6 +67,9 @@ const PlanDuration = () => {
           The longer you invest, the higher your potential returns. These
           estimates are based on historical results. Actual returns may vary.
         </Text>
+      </View>
+      <View style={styles.buttonContainer}>
+        <LongButton onPress={() => navigate('AddMoney')} title={'Continue'} />
       </View>
     </SafeAreaView>
   );

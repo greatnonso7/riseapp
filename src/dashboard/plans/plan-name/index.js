@@ -7,10 +7,14 @@ import Progress from 'react-native-progress/Bar';
 import { hp, wp } from '../../../shared/responsive-dimension';
 import { normalColors as colors } from '../../../colors';
 
-const PlanName = () => {
+const PlanName = ({ navigation: { navigate, goBack } }) => {
   return (
     <SafeAreaView style={styles.container}>
-      <HeaderBar hasBackButton headerTitle="Name Your Plan" />
+      <HeaderBar
+        onPressLeftIcon={() => goBack()}
+        hasBackButton
+        headerTitle="Name Your Plan"
+      />
       <View style={styles.bottomContainer}>
         <Text style={styles.questionCount}>Question 1 of 4</Text>
         <View style={{ paddingTop: hp(11) }}>
@@ -39,7 +43,10 @@ const PlanName = () => {
           numberOfLines={1}
         />
         <View style={{ marginTop: hp(16) }}>
-          <LongButton title={'Continue'} />
+          <LongButton
+            onPress={() => navigate('PlanDuration')}
+            title={'Continue'}
+          />
         </View>
       </View>
     </SafeAreaView>
