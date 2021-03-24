@@ -9,7 +9,7 @@ import { images } from '../../../images';
 
 const { icons } = images;
 
-const AutoInvest = ({ navigation: { navigate, goBack } }) => {
+const AddImage = ({ navigation: { navigate, goBack } }) => {
   return (
     <SafeAreaView style={styles.container}>
       <HeaderBar
@@ -103,4 +103,4 @@ const AutoInvest = ({ navigation: { navigate, goBack } }) => {
   );
 };
 
-export default AutoInvest;
+export default AddImage;

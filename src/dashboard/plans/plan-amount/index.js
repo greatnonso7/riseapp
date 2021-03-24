@@ -7,14 +7,15 @@ import { styles } from './style';
 import Progress from 'react-native-progress/Bar';
 import { hp, wp } from '../../../shared/responsive-dimension';
 import { normalColors as colors } from '../../../colors';
-import { images } from '../../../images';
 
-const { illustrations } = images;
-
-const PlanAmount = () => {
+const PlanAmount = ({ navigation: { navigate, goBack } }) => {
   return (
     <SafeAreaView style={styles.container}>
-      <HeaderBar hasBackButton headerTitle="Add Money" />
+      <HeaderBar
+        onPressLeftIcon={() => goBack()}
+        hasBackButton
+        headerTitle="Add Money"
+      />
       <View style={styles.bottomContainer}>
         <Text style={styles.questionCount}>Question 4 of 4</Text>
         <View style={{ paddingTop: hp(11) }}>
@@ -64,29 +65,14 @@ const PlanAmount = () => {
               fixed by Rise and will fluctuate over the period of your plan.
             </Text>
           </View>
-          <LongButton title={'Continue'} />
+          <LongButton
+            onPress={() => navigate('AutoInvest')}
+            title={'Continue'}
+          />
         </View>
       </View>
     </SafeAreaView>
   );
 };
-
-const Values = [
-  {
-    id: 1,
-    duration: 'Daily',
-    radio: illustrations.radioOff,
-  },
-  {
-    id: 2,
-    duration: 'Weekly',
-    radio: illustrations.radioOn,
-  },
-  {
-    id: 3,
-    duration: 'Monthly',
-    radio: illustrations.radioOff,
-  },
-];
 
 export default PlanAmount;

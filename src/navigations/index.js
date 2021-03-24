@@ -11,6 +11,7 @@ import PlanDuration from '../dashboard/plans/plan-duration';
 import AddMoney from '../dashboard/plans/plan-add-money';
 import AutoInvest from '../dashboard/plans/plan-auto-invest';
 import PlanAmount from '../dashboard/plans/plan-amount';
+import AddImage from '../dashboard/plans/add-image';
 
 const Stack = createStackNavigator();
 
@@ -86,6 +87,13 @@ const AppNav = () => {
       <Stack.Screen
         name="AutoInvest"
         component={AutoInvest}
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Stack.Screen
+        name="PickImage"
+        component={AddImage}
         options={{
           headerShown: false,
         }}
