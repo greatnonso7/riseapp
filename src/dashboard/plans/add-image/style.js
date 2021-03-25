@@ -8,32 +8,41 @@ const { main } = globalStyle(colors);
 
 export const styles = StyleSheet.create({
   bottomContainer: {
-    marginHorizontal: hp(12),
-    marginVertical: hp(10),
+    marginHorizontal: hp(24),
+    marginVertical: hp(15),
   },
-
-  amount: {
-    ...main.boldText16,
-    paddingLeft: hp(11),
+  headerTitle: {
+    ...main.regularText17,
+    color: '#838F91',
+    textAlign: 'center',
   },
-  text: {
-    ...main.regularText14,
-    paddingLeft: hp(11),
-  },
-  percentContainer: {
-    position: 'absolute',
-    bottom: hp(50),
-    right: hp(14),
-    height: hp(20),
-    width: hp(75),
+  interestContainer: {
+    width: wp(300),
+    height: hp(169),
+    backgroundColor: colors.tael,
+    marginTop: hp(30),
+    marginHorizontal: hp(15),
+    borderRadius: hp(8),
     justifyContent: 'center',
     alignItems: 'center',
-    borderRadius: hp(10),
-    backgroundColor: colors.green,
   },
-  percent: {
-    ...main.semiBoldText12,
-    color: colors.white,
+  imageText: {
+    ...main.regularText14,
+    color: colors.taelDark,
+    paddingTop: hp(8),
+  },
+  deleteTextContainer: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingTop: hp(18),
+  },
+  deleteText: {
+    ...main.regularText14,
+    color: colors.taelDark,
+  },
+  skipText: {
+    ...main.semiBoldText18,
+    color: colors.taelDark,
   },
   container: {
     flex: 1,
